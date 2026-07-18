@@ -111,7 +111,7 @@ const levels = {
 
     time:60,
 
-    speed:12000
+    speed:900
 
 },
 
@@ -130,7 +130,7 @@ const levels = {
 
     time:60,
 
-    speed:11000
+    speed:950
 
 
 },
@@ -148,9 +148,9 @@ const levels = {
 
     bio:5,
 
-    time:65,
+    time:60,
 
-    speed:10000
+    speed:950
 
 
 }
