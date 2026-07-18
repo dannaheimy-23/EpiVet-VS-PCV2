@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EpiVet VS PCV2</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<section id="menu">
+
+<div class="background-map"></div>
+
+<h1>EpiVet VS PCV2</h1>
+
+<p>
+Simulador Epidemiológico Veterinario
+</p>
+
+
+<div class="buttons">
+
+<button id="startBtn">
+Iniciar partida
+</button>
+
+
+<button id="helpBtn">
+Cómo jugar
+</button>
+
+</div>
+
+</section>
+
+
+
+
+
+<section id="reportScreen" class="hidden">
+
+
+<div class="reportCard">
+
+
+<h2>
+📋 Reporte Epidemiológico
+</h2>
+
+
+<hr>
+
+
+<p id="reportFarm">
+
+<strong>Granja:</strong>
+Región inicial
+
+</p>
+
+
+<p id="reportPathogen">
+
+<strong>Patógeno:</strong>
+Circovirus Porcino tipo 2 (PCV2)
+
+</p>
+
+
+<p id="reportStatus">
+
+<strong>Estado:</strong>
+Brote confirmado
+
+</p>
+
+
+<p id="reportLevel">
+
+<strong>Nivel:</strong>
+1
+
+</p>
+
+
+<hr>
+
+
+<h3>
+Misión
+</h3>
+
+
+<p>
+
+Se ha detectado un brote de PCV2.
+Controla la propagación utilizando vacunación y medidas de bioseguridad.
+
+</p>
+
+
+<button id="beginBtn">
+
+▶ Iniciar control epidemiológico
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="helpScreen" class="hidden">
+
+
+<div class="helpBox">
+
+
+<h2>
+¿Cómo jugar?
+</h2>
+
+
+<p>
+
+Controla un brote de Circovirus Porcino tipo 2 antes de que alcance todas las granjas.
+
+</p>
+
+
+
+<h3>
+Herramientas
+</h3>
+
+
+<ul>
+
+<li>
+💉 Vacunación
+</li>
+
+<li>
+🛡️ Bioseguridad
+</li>
+
+</ul>
+
+
+
+<h3>
+Objetivo
+</h3>
+
+
+<p>
+
+Protege las granjas estratégicamente y evita la expansión del virus.
+
+</p>
+
+
+
+<button id="backBtn">
+
+Volver al menú
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="gameScreen" class="hidden">
+
+
+
+<header id="topBar">
+
+
+<div id="level">
+Nivel 1
+</div>
+
+
+
+<div id="timer">
+🕒 02:00
+</div>
+
+
+
+<div id="vaccines">
+💉 Vacunas: 3
+</div>
+
+
+
+<div id="bio">
+🛡️ Bioseguridad: 2
+</div>
+
+
+
+<div id="score">
+⭐ Puntaje: 0
+</div>
+
+
+
+<div id="infectedCount">
+🦠 Infectadas: 1
+</div>
+
+
+</header>
+
+
+
+
+
+<main id="gameArea">
+
+
+<svg id="roads"></svg>
+
+
+<div id="map">
+
+</div>
+
+
+
+
+
+<aside id="infoPanel">
+
+
+<h3 id="farmTitle">
+
+Granja
+
+</h3>
+
+
+<p id="farmStatus">
+
+Estado:
+
+</p>
+
+
+
+<button id="vaccineBtn">
+
+💉 Vacunar
+
+</button>
+
+
+
+<button id="bioBtn">
+
+🛡️ Bioseguridad
+
+</button>
+
+
+
+</aside>
+
+
+</main>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="endScreen" class="hidden">
+
+
+<div class="reportCard">
+
+
+<h2 id="endTitle">
+
+</h2>
+
+
+<hr>
+
+
+<p id="endMessage">
+
+</p>
+
+
+
+<p id="endScore">
+
+</p>
+
+
+
+<button id="nextBtn">
+
+Continuar
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<script src="js/app.js"></script>
+
+
+</body>
+
+</html>

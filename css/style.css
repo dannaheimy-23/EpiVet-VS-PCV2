@@ -1,0 +1,471 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    width:100vw;
+    height:100vh;
+
+    overflow:hidden;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#eef8f2;
+
+}
+
+
+
+/* ELEMENTOS GENERALES */
+
+
+button{
+
+    border:none;
+
+    padding:15px 25px;
+
+    border-radius:14px;
+
+    background:#2e7d32;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+button:hover{
+
+    transform:scale(1.05);
+
+    background:#1b5e20;
+
+}
+
+
+
+.hidden{
+
+    display:none !important;
+
+}
+
+
+
+
+
+/* MENU */
+
+
+#menu{
+
+    width:100vw;
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+
+#menu h1{
+
+    font-size:70px;
+
+    color:#14532d;
+
+    margin-bottom:20px;
+
+}
+
+
+
+#menu p{
+
+    font-size:25px;
+
+    color:#46634f;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+
+.background-map{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle,#d9efd9,#eef8f2);
+
+    z-index:-1;
+
+}
+
+
+
+
+
+
+
+/* REPORTES */
+
+
+#reportScreen,
+#helpScreen,
+#endScreen{
+
+
+    width:100vw;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+}
+
+
+
+.reportCard,
+.helpBox{
+
+
+    width:700px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.15);
+
+
+}
+
+
+
+.reportCard h2,
+.helpBox h2{
+
+    color:#14532d;
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+/* JUEGO */
+
+
+#gameScreen{
+
+    width:100vw;
+
+    height:100vh;
+
+}
+
+
+
+#topBar{
+
+
+    height:80px;
+
+    background:#2e7d32;
+
+    color:white;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-around;
+
+
+    font-size:18px;
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+#gameArea{
+
+
+    position:relative;
+
+    width:100%;
+
+    height:calc(100vh - 80px);
+
+
+}
+
+
+
+
+
+
+/* MAPA */
+
+
+#map{
+
+
+    position:absolute;
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+
+    180deg,
+
+    #edf8ec,
+
+    #d7edd7
+
+    );
+
+
+}
+
+
+
+#roads{
+
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    z-index:1;
+
+}
+
+
+
+#roads line{
+
+    stroke:#7d7d7d;
+
+    stroke-width:5;
+
+}
+
+
+
+
+
+
+
+/* GRANJAS */
+
+
+.farm{
+
+
+    position:absolute;
+
+
+    width:65px;
+
+    height:65px;
+
+
+    border-radius:50%;
+
+
+    background:white;
+
+
+    border:4px solid #2e7d32;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    font-size:32px;
+
+
+    cursor:pointer;
+
+
+    z-index:3;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.farm:hover{
+
+    transform:scale(1.15);
+
+}
+
+
+
+.infected{
+
+    background:#e53935;
+
+    border-color:#8b0000;
+
+}
+
+
+
+.vaccinated{
+
+    background:#4fc3f7;
+
+    border-color:#0277bd;
+
+}
+
+
+
+.protected{
+
+    background:#ffd54f;
+
+    border-color:#f9a825;
+
+}
+
+
+
+
+
+
+
+/* PANEL */
+
+
+#infoPanel{
+
+
+    position:absolute;
+
+
+    right:20px;
+
+
+    top:20px;
+
+
+    width:230px;
+
+
+    padding:20px;
+
+
+    background:white;
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.2);
+
+
+    z-index:10;
+
+
+}
+
+
+
+#infoPanel h3{
+
+    color:#14532d;
+
+    margin-bottom:15px;
+
+}
+
+
+
+#infoPanel button{
+
+
+    width:100%;
+
+    margin-top:15px;
+
+
+}
