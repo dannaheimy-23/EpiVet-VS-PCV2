@@ -422,7 +422,7 @@ farms.push(farm);
 
 farmState.push({
 
-status:"sana"
+status:"healthy"
 
 });
 
