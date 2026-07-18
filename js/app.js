@@ -150,7 +150,7 @@ const levels = {
 
     time:60,
 
-    speed:10000
+    speed:11000
 
 
 }
